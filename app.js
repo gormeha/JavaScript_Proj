@@ -46,11 +46,11 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
        //Update the UI
        document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer]
 
-       if(scores[activePlayer] >= 100){
+       if(scores[activePlayer] >= 15){
          document.querySelector('#name-' + activePlayer).textContent = 'Hey Winner!'
          document.querySelector('.dice').style.display = 'none'
          document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
-         document.querySelector('.player-' + activePlayer + '-panel').classList.remove('activate');
+         document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
          gamestate = false;
          } else{
          // change the palyer
